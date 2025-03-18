@@ -57,7 +57,7 @@ netstat -rn | grep utun
 ifconfig | grep utun
 </code></pre></div><p>بالنسبة لـ ExpressVPN، عادةً ما سترى واجهة مثل utun8 أو شيء مشابه.</p>
 <h4 id="الحصول-على-نطاقات-الـ-ip-الخاصة-بـ-github">الحصول على نطاقات الـ IP الخاصة بـ GitHub</h4>
-<p>يقوم GitHub بنشر نطاقات الـ IP الخاصة به عبر API عامة. يمكنك استخدام هذا السكربت بلغة Python لجلب وتنظيم هذه النطاقات, توليد القواعد الخاصة التي تقوم بحظر GitHub لاضافتها للملف الخاص <code>pf.conf</code>, ثم تكون بانشاء نسخة مؤقتة عن الملف تتضمن القواعد الجديد, حيث يمكنك استبدال الملف الاساسي بالملف الجديد.</p>
+<p>يقوم GitHub بنشر نطاقات الـ IP الخاصة به عبر API عامة. يمكنك استخدام هذا السكربت بلغة Python لجلب وتنظيم هذه النطاقات, توليد القواعد الخاصة التي تقوم بحظر GitHub لاضافتها للملف الخاص <code>pf.conf</code>, ثم تقوم بانشاء نسخة مؤقتة عن الملف تتضمن القواعد الجديدة, حيث يمكنك استبدال الملف الاساسي بالملف الجديد.</p>
 <p>قم بتنزيل هذا السكربت من <!-- raw HTML omitted -->هنا<!-- raw HTML omitted -->, وتنفيذ هذه الأوامر التالية لإنشاء الملف الجديد:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Make it executable</span>
 chmod +x github_pf.py
